@@ -123,6 +123,7 @@ services:
       base:
 
   #  6. ipfs单节点
+  # 私有节点，则启动节点后，进入容器，执行命令：ipfs bootstrap rm all
   x-ipfs:
     image: ${IMAGE_IPFS}
     container_name: ${CONTAINER_IPFS}
